@@ -5,10 +5,10 @@ public class Outside {
 	private static long start;
     private static long end;
     private static boolean started;
-    public void setGPA(double ders1,double ders2,double ders3,double ders4,double ders5)
+    public void setGPA(double lesson1,double lesson2,double lesson3,double lesson4,double lesson5)
 	
 	{
-			 this.GPA=(ders1+ders2+ders3+ders4+ders5)/5;
+			 this.GPA=(lesson1+lesson2+lesson3+lesson4+lesson5)/5;
 	}
 		
 	public double getGPA()
