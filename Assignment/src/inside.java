@@ -12,7 +12,7 @@ public class inside {
 	public static void main(String[] args) throws IOException {
 		
 		File file= new File("Database.txt");// the file is defined
-		if(!file.exists())//›f file not exist create new
+		if(!file.exists())//√ùf file not exist create new
 			file.createNewFile();
 		
 		ArrayList<String> list= new ArrayList<String>();// the Arraylist is defined
@@ -86,7 +86,7 @@ public class inside {
 												    }
 													 else
 													{
-															avarages=(grade1+grade2+grade3+grade4+grade5)/5;
+															outside.setGPA(grade1,grade2,grade3,grade4,grade5);
 															list.add(String.valueOf(ID1));
 															list.add(name);
 															list.add(surname);
@@ -95,16 +95,16 @@ public class inside {
 															list.add(String.valueOf(grade3));
 															list.add(String.valueOf(grade4));
 															list.add(String.valueOf(grade5));
-															list.add(String.valueOf(avarages));
+															list.add(String.valueOf(outside.getGPA()));
 														
-															 FileWriter yazd˝r1 = new FileWriter(file);
+															 FileWriter yazd√Ωr1 = new FileWriter(file);
 															 for(int i=0;i<list.size();i++){
 														           
-																 yazd˝r1.write(list.get(i)+"\n");
+																 yazd√Ωr1.write(list.get(i)+"\n");
 																 
 															
 														        }
-															 	yazd˝r1.close();
+															 	yazd√Ωr1.close();
 		
 																System.out.println("Number "+ID1+" was assigned to the student.\nThe Registration  is successful..");
 																out2=false;
