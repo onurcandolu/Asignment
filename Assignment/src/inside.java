@@ -97,15 +97,14 @@ public class inside {
 															list.add(String.valueOf(grade5));
 															list.add(String.valueOf(outside.getGPA()));
 														
-															 FileWriter yazdýr1 = new FileWriter(file);
+															 FileWriter write = new FileWriter(file);
 															 for(int i=0;i<list.size();i++){
 														           
-																 yazdýr1.write(list.get(i)+"\n");
+																 write.write(list.get(i)+"\n");
 																 
 															
 														        }
-															 	yazdýr1.close();
-		
+															 write.close();
 																System.out.println("Number "+ID1+" was assigned to the student.\nThe Registration  is successful..");
 																out2=false;
 													}
